@@ -7,24 +7,38 @@ def present ( grocery_list )
 end
 
 #grocery list
-grocery_list = ["carrots" , "toilet paper" , "apples" , "salmon"]
+grocery_list = ["carrots" , "toilet paper" , "apples" , "salmon" , "bananas"]
 #add rice to the list
 grocery_list << "rice"
 grocery_list << "peach"
 present ( grocery_list )
 
-#
-# puts "im going to the store next week"
-# present ( grocery_list )
-#
-# new_grocery_list = []
-# new_grocery_list << "peach"
-# new_grocery_list << "banana"
-# both_grocery_list = new_grocery_list + grocery_list
-# puts "this is both grocery list"
-# present both_grocery_list
-#
-# new_item_only = both_grocery_list - grocery_list
-# puts "this is only the new item"
-# present new_item_only
-#
+#count the list
+puts grocery_list.count
+
+#if bananas
+def buy_or_nah(bananas , g)
+  g.each do |grocery|
+    if ( grocery == bananas )
+      return "You need to pick up bananas"
+    end
+  end
+  return "You dont need to pick up bananas today"
+end
+
+#inculde
+def include_bananas(bananas , g)
+  if g.include?(bananas)
+    puts "You need to pick up bananas"
+  else
+    puts "You dont need to pick up bananas today"
+  end
+end
+
+
+grocery_list2 = ["bread"]
+
+puts buy_or_nah("bananas", grocery_list)
+buy_or_nah("bananas", grocery_list2)
+
+include_bananas("bananas" , grocery_list)
