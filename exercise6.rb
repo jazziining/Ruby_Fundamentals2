@@ -45,3 +45,6 @@ include_bananas("bananas" , grocery_list)
 
 #display the second item in the list
 puts grocery_list [ 1 ]
+
+#display the list alphabetically
+present (grocery_list).sort
