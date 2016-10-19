@@ -42,3 +42,6 @@ puts buy_or_nah("bananas", grocery_list)
 buy_or_nah("bananas", grocery_list2)
 
 include_bananas("bananas" , grocery_list)
+
+#display the second item in the list
+puts grocery_list [ 1 ]
