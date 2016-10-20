@@ -1,3 +1,4 @@
+#Methods
 #Converts Fah to Cel
 
 temp_fahrenheit = gets.to_i
